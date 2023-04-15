@@ -148,13 +148,17 @@ export default function Home() {
             </div>
             {/* Strength Meter */}
             <div className="flex items-center gap-3">
-              <label className={classNames(
-                "text-xl uppercase leading-8",
-                strength === 'too weak' ? "text-accent-600" : "",
-                strength === 'weak' ? "text-accent-500" : "",
-                strength === 'medium' ? "text-accent-400" : "",
-                strength === 'strong' ? "text-accent-300" : "",
-              )}>{strength}</label>
+              <label
+                className={classNames(
+                  "text-xl uppercase leading-8",
+                  strength === "too weak" ? "text-accent-600" : "",
+                  strength === "weak" ? "text-accent-500" : "",
+                  strength === "medium" ? "text-accent-400" : "",
+                  strength === "strong" ? "text-accent-300" : ""
+                )}
+              >
+                {strength}
+              </label>
               <div className="flex gap-2">
                 <div
                   className={classNames(
